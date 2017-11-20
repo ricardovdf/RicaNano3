@@ -12,6 +12,10 @@
 		1C5B7F3C1FBEF50700D0C19A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C5B7F3A1FBEF50700D0C19A /* Main.storyboard */; };
 		1C5B7F3E1FBEF50700D0C19A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C5B7F3D1FBEF50700D0C19A /* Assets.xcassets */; };
 		1C5B7F411FBEF50700D0C19A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C5B7F3F1FBEF50700D0C19A /* LaunchScreen.storyboard */; };
+		1C5B7F671FC0B80800D0C19A /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5B7F661FC0B80800D0C19A /* PhotosCollectionViewCell.swift */; };
+		1C8BFA271FC3201500D853A6 /* FrancescoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8BFA261FC3201500D853A6 /* FrancescoData.swift */; };
+		1CADD8661FC0C80F003F9A88 /* EmojiInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADD8651FC0C80F003F9A88 /* EmojiInfoCollectionViewCell.swift */; };
+		1CADD8681FC0E601003F9A88 /* DatesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADD8671FC0E601003F9A88 /* DatesCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,10 @@
 		1C5B7F3D1FBEF50700D0C19A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C5B7F401FBEF50700D0C19A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C5B7F421FBEF50700D0C19A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C5B7F661FC0B80800D0C19A /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
+		1C8BFA261FC3201500D853A6 /* FrancescoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrancescoData.swift; sourceTree = "<group>"; };
+		1CADD8651FC0C80F003F9A88 /* EmojiInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiInfoCollectionViewCell.swift; sourceTree = "<group>"; };
+		1CADD8671FC0E601003F9A88 /* DatesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +68,10 @@
 				1C5B7F3D1FBEF50700D0C19A /* Assets.xcassets */,
 				1C5B7F3F1FBEF50700D0C19A /* LaunchScreen.storyboard */,
 				1C5B7F421FBEF50700D0C19A /* Info.plist */,
+				1C5B7F661FC0B80800D0C19A /* PhotosCollectionViewCell.swift */,
+				1CADD8651FC0C80F003F9A88 /* EmojiInfoCollectionViewCell.swift */,
+				1CADD8671FC0E601003F9A88 /* DatesCollectionViewCell.swift */,
+				1C8BFA261FC3201500D853A6 /* FrancescoData.swift */,
 			);
 			path = RicaNano3;
 			sourceTree = "<group>";
@@ -136,8 +148,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CADD8681FC0E601003F9A88 /* DatesCollectionViewCell.swift in Sources */,
 				1C5B7F391FBEF50700D0C19A /* ViewController.swift in Sources */,
+				1C8BFA271FC3201500D853A6 /* FrancescoData.swift in Sources */,
+				1CADD8661FC0C80F003F9A88 /* EmojiInfoCollectionViewCell.swift in Sources */,
 				1C5B7F371FBEF50700D0C19A /* AppDelegate.swift in Sources */,
+				1C5B7F671FC0B80800D0C19A /* PhotosCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +290,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RicaNano3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -288,6 +305,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = RicaNano3/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
