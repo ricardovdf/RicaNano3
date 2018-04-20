@@ -11,11 +11,11 @@
 		1C5B7F391FBEF50700D0C19A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5B7F381FBEF50700D0C19A /* ViewController.swift */; };
 		1C5B7F3C1FBEF50700D0C19A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C5B7F3A1FBEF50700D0C19A /* Main.storyboard */; };
 		1C5B7F3E1FBEF50700D0C19A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C5B7F3D1FBEF50700D0C19A /* Assets.xcassets */; };
-		1C5B7F411FBEF50700D0C19A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C5B7F3F1FBEF50700D0C19A /* LaunchScreen.storyboard */; };
 		1C5B7F671FC0B80800D0C19A /* PhotosCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5B7F661FC0B80800D0C19A /* PhotosCollectionViewCell.swift */; };
 		1C8BFA271FC3201500D853A6 /* FrancescoData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8BFA261FC3201500D853A6 /* FrancescoData.swift */; };
 		1CADD8661FC0C80F003F9A88 /* EmojiInfoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADD8651FC0C80F003F9A88 /* EmojiInfoCollectionViewCell.swift */; };
 		1CADD8681FC0E601003F9A88 /* DatesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADD8671FC0E601003F9A88 /* DatesCollectionViewCell.swift */; };
+		1CD281291FC475AF00591B0D /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CD281281FC475AF00591B0D /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,12 +24,12 @@
 		1C5B7F381FBEF50700D0C19A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1C5B7F3B1FBEF50700D0C19A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C5B7F3D1FBEF50700D0C19A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1C5B7F401FBEF50700D0C19A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C5B7F421FBEF50700D0C19A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C5B7F661FC0B80800D0C19A /* PhotosCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosCollectionViewCell.swift; sourceTree = "<group>"; };
 		1C8BFA261FC3201500D853A6 /* FrancescoData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrancescoData.swift; sourceTree = "<group>"; };
 		1CADD8651FC0C80F003F9A88 /* EmojiInfoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiInfoCollectionViewCell.swift; sourceTree = "<group>"; };
 		1CADD8671FC0E601003F9A88 /* DatesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesCollectionViewCell.swift; sourceTree = "<group>"; };
+		1CD281281FC475AF00591B0D /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +66,12 @@
 				1C5B7F381FBEF50700D0C19A /* ViewController.swift */,
 				1C5B7F3A1FBEF50700D0C19A /* Main.storyboard */,
 				1C5B7F3D1FBEF50700D0C19A /* Assets.xcassets */,
-				1C5B7F3F1FBEF50700D0C19A /* LaunchScreen.storyboard */,
 				1C5B7F421FBEF50700D0C19A /* Info.plist */,
 				1C5B7F661FC0B80800D0C19A /* PhotosCollectionViewCell.swift */,
 				1CADD8651FC0C80F003F9A88 /* EmojiInfoCollectionViewCell.swift */,
 				1CADD8671FC0E601003F9A88 /* DatesCollectionViewCell.swift */,
 				1C8BFA261FC3201500D853A6 /* FrancescoData.swift */,
+				1CD281281FC475AF00591B0D /* Launch Screen.storyboard */,
 			);
 			path = RicaNano3;
 			sourceTree = "<group>";
@@ -103,7 +103,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Ricardo V Del Frari";
 				TargetAttributes = {
 					1C5B7F321FBEF50700D0C19A = {
@@ -135,7 +135,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C5B7F411FBEF50700D0C19A /* LaunchScreen.storyboard in Resources */,
+				1CD281291FC475AF00591B0D /* Launch Screen.storyboard in Resources */,
 				1C5B7F3E1FBEF50700D0C19A /* Assets.xcassets in Resources */,
 				1C5B7F3C1FBEF50700D0C19A /* Main.storyboard in Resources */,
 			);
@@ -168,14 +168,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		1C5B7F3F1FBEF50700D0C19A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1C5B7F401FBEF50700D0C19A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -193,6 +185,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -200,6 +193,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -250,6 +244,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -257,6 +252,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -292,7 +288,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PH45CQWPN;
 				INFOPLIST_FILE = RicaNano3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ricavdf.RicaNano3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -307,7 +305,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5PH45CQWPN;
 				INFOPLIST_FILE = RicaNano3/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ricavdf.RicaNano3;
 				PRODUCT_NAME = "$(TARGET_NAME)";

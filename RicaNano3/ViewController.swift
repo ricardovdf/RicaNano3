@@ -9,28 +9,32 @@
 import UIKit
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-
+    
+    //Hide Status Bar
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
+    //IBOutlets for
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var mainInfoLabel: UILabel!
-    @IBOutlet weak var datePicker: UIDatePicker!
     @IBOutlet weak var photosCollectionView: UICollectionView!
     @IBOutlet weak var emojiCollectionView: UICollectionView!
     
+    //Create an instance with all the informations about Francesco
     var francescoData = FrancescoData()
     
-    var francescoPhotos = [#imageLiteral(resourceName: "Francesco 01"),#imageLiteral(resourceName: "Francesco 02"),#imageLiteral(resourceName: "Francesco 03"),#imageLiteral(resourceName: "Francesco 04"),#imageLiteral(resourceName: "Francesco 05"),#imageLiteral(resourceName: "Francesco 06"),#imageLiteral(resourceName: "Francesco 07")]
-    
-    var emojis = ["🐶","😡","🤓","❤️","🏎","🇮🇹","🍕","⚽️","📱"]
-   
     override func viewDidLoad() {
         super.viewDidLoad()
+        mainInfoLabel.text = "Hello! I am Francesco. Choose an item to know more about me! "
     }
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         
         if collectionView.tag == 2 {
-            return francescoPhotos.count
+            //With Singleton
+            return FrancescoData.shared.francescoPhotos.count
         }else if collectionView.tag == 1 {
 //            return emojis.count
             return francescoData.testEmojis.count
@@ -41,11 +45,17 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
+        //Set up Photos Collection View
         if collectionView.tag == 2 {
+            
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "photosCollectionCell", for: indexPath) as! PhotosCollectionViewCell
-            cell.photoImageView.image = francescoPhotos[indexPath.row]
+            
+            cell.photoImageView.image = francescoData.francescoPhotos[indexPath.row]
+            cell.layer.cornerRadius = 10
             
             return cell
+            
+            //Set up Emoji Facts Collection View
         }else if collectionView.tag == 1{
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "emojiCollectionCell", for: indexPath) as! EmojiInfoCollectionViewCell
@@ -53,9 +63,10 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
             let emoji = francescoData.testEmojis[indexPath.row]
             cell.emojiLabel.text = emoji.emoji
             cell.sentences = emoji.sentences
-//            cell.emojiLabel.text = emojis[indexPath.row]
             
             return cell
+            
+            //Set up Calendar Collection View
         }else {
             
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "dateCollectionCell", for: indexPath) as! DatesCollectionViewCell
@@ -76,25 +87,26 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         if collectionView.tag == 0 {
         
             guard let cell = collectionView.cellForItem(at: indexPath) as? DatesCollectionViewCell else {
-                // couldn't get the cell for some reason
                 return
             }
             
             mainInfoLabel.text = cell.event
             
-        } else {
+        } else if collectionView.tag == 1 {
             
             guard let cell = collectionView.cellForItem(at: indexPath) as? EmojiInfoCollectionViewCell else {
                 return
             }
             
             mainInfoLabel.text = cell.sentences[Int(arc4random_uniform(UInt32(cell.sentences.count)))]
-//            print(cell.sentences.count)
-//            arc
-//            Int(arc4random(UInt32(cell.sentences.count)))
-        }
-    }
 
-    
+        }else {
+            
+            mainInfoLabel.text = "A picture is worth a thousand words.."
+        }
+        
+        collectionView.deselectItem(at: indexPath, animated: true)
+        
+    }
 }
 

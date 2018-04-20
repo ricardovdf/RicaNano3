@@ -9,9 +9,11 @@
 import UIKit
 
 class DatesCollectionViewCell: UICollectionViewCell {
+    
     @IBOutlet weak var yearLabel: UILabel!
     @IBOutlet weak var monthLabel: UILabel!
     @IBOutlet weak var dayLabel: UILabel!
     @IBOutlet weak var backgroundImage: UIImageView!
     var event: String = ""
+    
 }
